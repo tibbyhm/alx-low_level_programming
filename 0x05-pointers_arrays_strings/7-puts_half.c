@@ -1,13 +1,14 @@
 #include "main.h"
 #include <stdio.h>
 #include <string.h>
-/*
+/**
+ * puts_half - Prints second half of a string
  * @str: The string that will be printed
  *
  * Return: void
  */
 
-void print_array(int *a, int n)
+void puts_half(char *str)
 {
 	int len, i, halflen;
 
