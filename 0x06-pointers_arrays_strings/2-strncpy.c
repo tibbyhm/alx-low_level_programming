@@ -1,4 +1,5 @@
 #include "main.h"
+
 #include <stddef.h>
 
 /**
@@ -14,14 +15,9 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i = 0;
+	int i;
 
-
-	if (dest == NULL)
-	{
-		return (NULL);
-	}
-	while (src[i] != '\0' && i < n)
+	while (src[i] != '\0' && n--)
 	{
 		dest[i] = src[i];
 		i++;
